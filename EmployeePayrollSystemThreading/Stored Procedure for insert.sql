@@ -16,9 +16,8 @@ create procedure spInsertData
 @City varchar(50) , 
 @Country varchar(50) 
 )
-
-select * from EmployeePayroll;
 as
+select * from EmployeePayroll;
 begin 
 insert into EmployeePayroll 
 values(@EmployeeId,@EmployeeName,@PhoneNumber,@Address,@Department,@Gender,@BasicPay,@Deductions,@TaxablePay,@Tax,@NetPay,@City,@Country);
