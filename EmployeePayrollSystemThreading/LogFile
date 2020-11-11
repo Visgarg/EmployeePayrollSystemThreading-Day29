@@ -1,0 +1,56 @@
+2020-11-11 20:40:41.9133 DEBUG Starting of synchronized Thread using Mutex : addEmployeeToPayrollWithThreadWithSynchronization|| ThreadId12
+2020-11-11 20:40:42.0244 DEBUG adding Employee to DatabaseBruce:addEmployeeToPayrollWithThreadWithSynchronization|| ThreadId12
+2020-11-11 20:40:42.0635 DEBUG added Employee to DatabaseBruce:addEmployeeToPayrollWithThreadWithSynchronization|| ThreadId12
+2020-11-11 20:40:42.0814 DEBUG Ending of synchronized Thread using Mutex : addEmployeeToPayrollWithThreadWithSynchronization|| ThreadId12
+2020-11-11 20:40:42.0814 DEBUG Starting of synchronized Thread using Mutex : addEmployeeToPayrollWithThreadWithSynchronization|| ThreadId12
+2020-11-11 20:40:42.1079 DEBUG adding Employee to DatabaseLee:addEmployeeToPayrollWithThreadWithSynchronization|| ThreadId12
+2020-11-11 20:40:42.1527 DEBUG added Employee to DatabaseLee:addEmployeeToPayrollWithThreadWithSynchronization|| ThreadId12
+2020-11-11 20:40:42.1630 DEBUG Ending of synchronized Thread using Mutex : addEmployeeToPayrollWithThreadWithSynchronization|| ThreadId12
+2020-11-11 20:40:42.2738 DEBUG Starting of synchronized Thread using Mutex : addEmployeeToPayrollWithThreadWithSynchronization|| ThreadId12
+2020-11-11 20:40:42.2864 DEBUG adding Employee to DatabaseSachin:addEmployeeToPayrollWithThreadWithSynchronization|| ThreadId12
+2020-11-11 20:40:42.4101 DEBUG added Employee to DatabaseSachin:addEmployeeToPayrollWithThreadWithSynchronization|| ThreadId12
+2020-11-11 20:40:42.4250 DEBUG Ending of synchronized Thread using Mutex : addEmployeeToPayrollWithThreadWithSynchronization|| ThreadId12
+2020-11-11 20:40:42.4411 DEBUG Starting of synchronized Thread using Mutex : addEmployeeToPayrollWithThreadWithSynchronization|| ThreadId12
+2020-11-11 20:40:42.4558 DEBUG adding Employee to DatabaseTendulkar:addEmployeeToPayrollWithThreadWithSynchronization|| ThreadId12
+2020-11-11 20:40:42.4558 DEBUG added Employee to DatabaseTendulkar:addEmployeeToPayrollWithThreadWithSynchronization|| ThreadId12
+2020-11-11 20:40:42.4866 DEBUG Ending of synchronized Thread using Mutex : addEmployeeToPayrollWithThreadWithSynchronization|| ThreadId12
+2020-11-11 20:40:42.4866 DEBUG Starting of synchronized Thread using Mutex : addEmployeeToPayrollWithThreadWithSynchronization|| ThreadId11
+2020-11-11 20:40:42.5330 DEBUG adding Employee to DatabaseMahendar:addEmployeeToPayrollWithThreadWithSynchronization|| ThreadId11
+2020-11-11 20:40:42.5472 DEBUG added Employee to DatabaseMahendar:addEmployeeToPayrollWithThreadWithSynchronization|| ThreadId11
+2020-11-11 20:40:42.5623 DEBUG Ending of synchronized Thread using Mutex : addEmployeeToPayrollWithThreadWithSynchronization|| ThreadId11
+2020-11-11 20:40:42.5749 DEBUG Starting of synchronized Thread using Mutex : addEmployeeToPayrollWithThreadWithSynchronization|| ThreadId12
+2020-11-11 20:40:42.6080 DEBUG adding Employee to DatabaseSingh:addEmployeeToPayrollWithThreadWithSynchronization|| ThreadId12
+2020-11-11 20:40:42.7088 DEBUG added Employee to DatabaseSingh:addEmployeeToPayrollWithThreadWithSynchronization|| ThreadId12
+2020-11-11 20:40:42.7088 DEBUG Ending of synchronized Thread using Mutex : addEmployeeToPayrollWithThreadWithSynchronization|| ThreadId12
+2020-11-11 20:40:42.7357 DEBUG Starting of synchronized Thread using Mutex : addEmployeeToPayrollWithThreadWithSynchronization|| ThreadId12
+2020-11-11 20:40:42.7629 DEBUG adding Employee to DatabaseDhoni:addEmployeeToPayrollWithThreadWithSynchronization|| ThreadId12
+2020-11-11 20:40:42.7726 DEBUG added Employee to DatabaseDhoni:addEmployeeToPayrollWithThreadWithSynchronization|| ThreadId12
+2020-11-11 20:40:42.7899 DEBUG Ending of synchronized Thread using Mutex : addEmployeeToPayrollWithThreadWithSynchronization|| ThreadId12
+2020-11-11 20:40:42.8135 DEBUG Starting of synchronized Thread using Mutex : addEmployeeToPayrollWithThreadWithSynchronization|| ThreadId12
+2020-11-11 20:40:42.8230 DEBUG adding Employee to DatabaseVishal:addEmployeeToPayrollWithThreadWithSynchronization|| ThreadId12
+2020-11-11 20:40:42.8329 DEBUG added Employee to DatabaseVishal:addEmployeeToPayrollWithThreadWithSynchronization|| ThreadId12
+2020-11-11 20:40:42.8329 DEBUG Ending of synchronized Thread using Mutex : addEmployeeToPayrollWithThreadWithSynchronization|| ThreadId12
+2020-11-11 20:44:21.0188 DEBUG Starting Of thread:5
+2020-11-11 20:44:21.0889 DEBUG Starting Of thread:5
+2020-11-11 20:44:21.1018 DEBUG Starting Of thread:5
+2020-11-11 20:44:21.0889 DEBUG Adding of Employee :addEmployeeToPayrollWithThread()||ThreadID: 11
+2020-11-11 20:44:21.1018 DEBUG Adding of Employee :addEmployeeToPayrollWithThread()||ThreadID: 4
+2020-11-11 20:44:21.1144 DEBUG Starting Of thread:5
+2020-11-11 20:44:21.1679 DEBUG Starting Of thread:5
+2020-11-11 20:44:21.1276 INFO Employee Successfully added in List: addEmployeeToPayrollWithThread() ||ThreadId: 11
+2020-11-11 20:44:21.1276 INFO Employee Successfully added in List: addEmployeeToPayrollWithThread() ||ThreadId: 4
+2020-11-11 20:44:21.1144 DEBUG Adding of Employee :addEmployeeToPayrollWithThread()||ThreadID: 12
+2020-11-11 20:44:21.1679 DEBUG Adding of Employee :addEmployeeToPayrollWithThread()||ThreadID: 13
+2020-11-11 20:44:21.1847 DEBUG Starting Of thread:5
+2020-11-11 20:44:21.1847 DEBUG Adding of Employee :addEmployeeToPayrollWithThread()||ThreadID: 14
+2020-11-11 20:44:21.2271 INFO Employee Successfully added in List: addEmployeeToPayrollWithThread() ||ThreadId: 12
+2020-11-11 20:44:21.2391 INFO Employee Successfully added in List: addEmployeeToPayrollWithThread() ||ThreadId: 13
+2020-11-11 20:44:21.2391 DEBUG Starting Of thread:5
+2020-11-11 20:44:21.2520 DEBUG Adding of Employee :addEmployeeToPayrollWithThread()||ThreadID: 4
+2020-11-11 20:44:21.2520 INFO Employee Successfully added in List: addEmployeeToPayrollWithThread() ||ThreadId: 14
+2020-11-11 20:44:21.2979 DEBUG Starting Of thread:5
+2020-11-11 20:44:21.2979 DEBUG Adding of Employee :addEmployeeToPayrollWithThread()||ThreadID: 13
+2020-11-11 20:44:21.3088 INFO Employee Successfully added in List: addEmployeeToPayrollWithThread() ||ThreadId: 4
+2020-11-11 20:44:21.3296 DEBUG Adding of Employee :addEmployeeToPayrollWithThread()||ThreadID: 14
+2020-11-11 20:44:21.3935 INFO Employee Successfully added in List: addEmployeeToPayrollWithThread() ||ThreadId: 13
+2020-11-11 20:44:21.3935 INFO Employee Successfully added in List: addEmployeeToPayrollWithThread() ||ThreadId: 14
