@@ -79,9 +79,9 @@ namespace EmployeePayrollSystemThreading
         /// <param name="employeePayrollDataList">The employee payroll data list.</param>
         public void addEmployeeToPayrollWithThreadWithSynchronization(List<EmployeeDetails> employeePayrollDataList)
         {
-            employeePayrollDataList.ForEach(employeeData =>
+            employeePayrollDataList.ForEach(employeeData=>
             {
-                Task thread = new Task(() =>
+                Thread thread = new Thread(() =>
                 {
                     //mutex waitone method is used
                     //this method does not allow to other threads to go in it, until current thread execution is complete
@@ -98,7 +98,7 @@ namespace EmployeePayrollSystemThreading
                     nLog.LogDebug("Ending of synchronized Thread using Mutex : addEmployeeToPayrollWithThreadWithSynchronization|| ThreadId" + Thread.CurrentThread.ManagedThreadId);
                 });
                 thread.Start();
-                thread.Wait();
+                thread.Join();
 
             });
         }
@@ -148,10 +148,13 @@ namespace EmployeePayrollSystemThreading
         /// <param name="employeeDetails">The employee details.</param>
         public void addEmployeePayrollDatabase(EmployeeDetails employeeDetails)
         {
-        string connectionString = @"Data Source=DESKTOP-ERFDFCL\SQLEXPRESS01;Initial Catalog=payroll;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
-        //making a sql connection
-        SqlConnection connection = new SqlConnection(connectionString);
-        SqlCommand command = new SqlCommand("spInsertData", connection);
+            string connectionString = @"Data Source=DESKTOP-ERFDFCL\SQLEXPRESS01;Initial Catalog=payroll;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
+            //making a sql connection
+            SqlConnection connection = new SqlConnection(connectionString);
+            //Adding data into single table
+            //SqlCommand command = new SqlCommand("spInsertData", connection);
+            //adding data into multiple table
+            SqlCommand command = new SqlCommand("insertingdatainmultipletable", connection);
             command.CommandType = System.Data.CommandType.StoredProcedure;
             command.Parameters.AddWithValue("@EmployeeId", employeeDetails.EmployeeID);
             command.Parameters.AddWithValue("@EmployeeName", employeeDetails.EmployeeName);
@@ -171,6 +174,7 @@ namespace EmployeePayrollSystemThreading
             var result = command.ExecuteNonQuery();
             //closing connection
             connection.Close();
+
         }
         /// <summary>
         /// Adds the employee to payroll data base with thread with synchronization. UC3
@@ -178,10 +182,12 @@ namespace EmployeePayrollSystemThreading
         /// <param name="employeePayrollDataList">The employee payroll data list.</param>
         public void addEmployeeToPayrollDataBaseWithThreadWithSynchronization(List<EmployeeDetails> employeePayrollDataList)
         {
-            employeePayrollDataList.ForEach(employeeData =>
+            //using parallel.foreach multiple threads work at same time to complete the task of inserting the data.
+            //employeePayrollDataList.ForEach(employeeData =>
+            Parallel.ForEach(employeePayrollDataList,employeeData=>
             {
-                Task thread = new Task(() =>
-                {
+                //Task thread = new Task(() =>
+                //{
                     //mutex waitone method is used
                     //this method does not allow to other threads to go in it, until current thread execution is complete
                     mut.WaitOne();
@@ -195,13 +201,13 @@ namespace EmployeePayrollSystemThreading
                     mut.ReleaseMutex();
                     nLog.LogDebug("Ending of synchronized Thread using Mutex : addEmployeeToPayrollDatabaseWithThreadWithSynchronization|| ThreadId" + Thread.CurrentThread.ManagedThreadId);
 
-                });
-                thread.Start();
+                //});
+                ///thread.Start();
                 //task.wait or task.join also blocks other threads to come until current execution is not complete
                 //hence applying synchronization
                 //but it reduces no of threads to only one, as thread execution get complete and same thread execute again
                 //ask doubt for this. when thread.wait is not used with task, then error is thrown, while opening up connection
-                thread.Wait();
+                //thread.Wait();
             });
         }
       
